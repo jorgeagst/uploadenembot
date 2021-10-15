@@ -154,7 +154,7 @@ async def ddl_call_back(bot, update):
                 await bot.send_audio(
                     chat_id=update.message.chat.id,
                     audio=download_directory,
-                    caption=<b>description</b>,
+                    caption=description,
                     duration=duration,
                     # performer=response_json["uploader"],
                     # title=response_json["title"],
@@ -202,7 +202,7 @@ async def ddl_call_back(bot, update):
                 await bot.send_video(
                     chat_id=update.message.chat.id,
                     video=download_directory,
-                    caption=<b>description</b>,
+                    caption=description,
                     duration=duration,
                     width=width,
                     height=height,
